@@ -2089,7 +2089,7 @@ void HAL_CAN_IRQHandler(CAN_HandleTypeDef *hcan)
     hcan->ErrorCallback(hcan);
 #else
     /* Call weak (surcharged) callback */
-    HAL_CAN_ErrorCallback(hcan); 
+    HAL_CAN_ErrorCallback(hcan);
 #endif /* USE_HAL_CAN_REGISTER_CALLBACKS */
   }
 }
